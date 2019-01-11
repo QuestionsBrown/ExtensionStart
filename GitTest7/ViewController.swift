@@ -28,6 +28,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var lduacgliwecliwecih = "quydguqwgg"
     
+    var branch6Commit1 = "branch6 Commit 1"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +44,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         arScene.scene = scene
+        
+        arScene.showsStatistics = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
