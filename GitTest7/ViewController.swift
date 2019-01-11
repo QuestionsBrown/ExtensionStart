@@ -15,7 +15,7 @@ import ModelIO
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
-    @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet var arScene: ARSCNView!
     
     //First Branch Commit Without Merge
     var branch1Commit1 = "Q's First Branch Commit"
@@ -32,16 +32,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         
         // Set the view's delegate
-        sceneView.delegate = self
+        arScene.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        arScene.showsStatistics = true
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
         // Set the scene to the view
-        sceneView.scene = scene
+        arScene.scene = scene
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,14 +51,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARWorldTrackingConfiguration()
 
         // Run the view's session
-        sceneView.session.run(configuration)
+        arScene.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         // Pause the view's session
-        sceneView.session.pause()
+        arScene.session.pause()
     }
 
     // MARK: - ARSCNViewDelegate
