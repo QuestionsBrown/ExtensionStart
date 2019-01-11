@@ -4,7 +4,7 @@
 //
 //  Created by Concetta Turner on 1/11/19.
 //  Copyright © 2019 Integral Mobile AR. All rights reserved.
-//
+//Slimito!
 
 import UIKit
 import SceneKit
