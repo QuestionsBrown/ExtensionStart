@@ -20,6 +20,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     //First Branch Commit Without Merge
     var branch1Commit1 = "Q's First Branch Commit"
     
+    var branch2Commit1 = "Q's Second Branch Commit"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
