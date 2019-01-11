@@ -22,6 +22,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var branch2Commit1 = "Q's Second Branch Commit"
     
+    var branch3Commit1 = "Qs Third branch Commit"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
